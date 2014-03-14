@@ -9,7 +9,6 @@ sudo npm install -g bower
 sudo npm install -g grunt-cli
 ```
 Then get the source code, initialize & launch
-
 ```
 git clone https://github.com/Bornholm/influx.git
 cd influx

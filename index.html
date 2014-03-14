@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Influx">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Influx</title>
-    <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body ng-controller="AppCtrl">
+
+    <!-- Layout -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" ng-controller="FeedCtrl">
+          <ul class="feeds">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vendor -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    <!-- Module -->
+    <script src="lib/influx.js"></script>
+    <!-- Controllers -->
+    <script src="lib/controllers/app.js"></script>
+    <script src="lib/controllers/feed.js"></script>
   </body>
 </html>

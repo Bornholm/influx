@@ -11,5 +11,14 @@
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-nw": "git+https://github.com/snap-project/grunt-nw.git#develop"
+  },
+  "window": {
+    "min_width": 300,
+    "min_height": 500,
+    "width": 300,
+    "height": 500,
+    "toolbar": false,
+    "position": "center",
+    "frame": true
   }
 }
