@@ -1,0 +1,6 @@
+node_modules
+bower_components
+*.log
+node-webkit
+build
+libudev.so.0

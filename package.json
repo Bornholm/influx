@@ -1,0 +1,15 @@
+{
+  "name": "influx",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bornholm <bornholm@lookingfora.name>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-nw": "git+https://github.com/snap-project/grunt-nw.git#develop"
+  }
+}
