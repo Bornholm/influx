@@ -10,7 +10,8 @@
   <body ng-controller="AppCtrl">
 
     <!-- Layout -->
-    <nav class="navbar navbar-default" role="navigation">
+    <!-- Navbar top start -->
+    <nav class="navbar navbar-default nav-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,6 +30,20 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar top stop -->
+
+    <!-- Navbar bottom start -->
+      <div class="container-fluid">
+          <div id="navbar-bottom">
+            <ul class="main-menu">
+              <li><a href="#" class="active"><i class="glyphicon glyphicon-home"></i></a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-pencil"></i></a></li>
+            </ul>
+          </div>
+      </div>
+    <!-- Navbar bottom stop -->
+
+    <!-- Feeds start -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12" ng-controller="FeedCtrl">
@@ -37,6 +52,7 @@
         </div>
       </div>
     </div>
+    <!-- Feeds stop -->
 
     <!-- Vendor -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
