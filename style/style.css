@@ -27,6 +27,36 @@ body { background: #f0f0f0; }
     overflow: hidden;
 }
 
+.feed {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid 2px #d8d8d8;
+}
+
+.avatar {
+    display: block;
+    overflow: hidden;
+}
+
+    .avatar > img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+.msg-content {
+
+}
+
+    .msg-content > img {
+        display: block;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
 /**
  * 2 - NAVIGATION
  */
@@ -36,9 +66,10 @@ body { background: #f0f0f0; }
 
 #navbar-bottom {
     background: #222222;
-    position: absolute;
+    position: fixed;
     bottom: 0; 
     left: 0; right: 0;
+    z-index: 1000;
 }
 
 .main-menu {
