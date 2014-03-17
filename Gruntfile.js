@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.registerTask('default', ['influx:run']);
   grunt.registerTask('influx:run', ['download', 'run']);
 
   grunt.loadNpmTasks('grunt-nw');
