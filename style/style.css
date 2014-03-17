@@ -44,8 +44,7 @@ body { background: #f0f0f0; }
     overflow: hidden;
     background: #fff;
     padding: 5px;
-    border: solid 1px #e8e8e8;
-    border-bottom: solid 2px #e8e8e8;
+    border-bottom: solid 1px #e8e8e8;
 }
 
 .avatar {
