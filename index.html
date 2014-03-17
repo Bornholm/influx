@@ -38,7 +38,7 @@
       </div>
       <div class="row">
         <ul>
-          <li ng-repeat="peer in peers">
+          <li ng-repeat="(key, peer) in peers">
             {{peer.address}}:{{peer.port}}
           </li>
         </ul>
