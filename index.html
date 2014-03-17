@@ -36,6 +36,13 @@
           </ul>
         </div>
       </div>
+      <div class="row">
+        <ul>
+          <li ng-repeat="peer in peers">
+            {{peer.address}}:{{peer.port}}
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Vendor -->
