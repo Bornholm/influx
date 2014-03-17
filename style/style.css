@@ -84,7 +84,7 @@ body { background: #f0f0f0; overflow: hidden; margin-top: 52px;}
     top: 0; left: 0; 
     width: 100%;
     position: fixed;
-    z-index: 400;
+    z-index: 1000;
 }
 
 #navbar-bottom {
