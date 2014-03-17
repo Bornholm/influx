@@ -20,5 +20,8 @@
     "toolbar": false,
     "position": "center",
     "frame": true
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.1"
   }
 }
