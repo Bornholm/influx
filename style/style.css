@@ -17,11 +17,8 @@ body {
     -webkit-box-sizing: border-box;
 }
 
-body { background: #f0f0f0; }
+body { background: #f0f0f0; overflow: hidden; margin-top: 52px;}
 
-.nav-top {
-    margin-bottom: 0;
-}
 /**
  * 1 - FEEDS
  */
@@ -29,13 +26,17 @@ body { background: #f0f0f0; }
     padding-left: 0;
     padding-right: 0;
     margin-top: 0;
+    position: absolute;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 52px;
+    z-index: 400;
+    padding-bottom: 80px;
 }
 
 .feeds {
     position: relative;
-    overflow: hidden;
-    padding-bottom: 30px;
 }
 
 .feed {
@@ -77,8 +78,13 @@ body { background: #f0f0f0; }
 /**
  * 2 - NAVIGATION
  */
+
 .nav-top {
-     box-shadow: 0 0 8px rgba(0,0,0,.4);
+    margin-bottom: 0;
+    top: 0; left: 0; 
+    width: 100%;
+    position: fixed;
+    z-index: 400;
 }
 
 #navbar-bottom {
