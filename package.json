@@ -19,7 +19,8 @@
     "height": 500,
     "toolbar": true,
     "position": "center",
-    "frame": true
+    "frame": true,
+    "icon": "img/icon.png"
   },
   "dependencies": {
     "node-uuid": "^1.4.1"
