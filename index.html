@@ -7,56 +7,42 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
-  <body ng-controller="AppCtrl">
+  <body>
 
     <!-- Layout -->
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" style="height: 25px">
+            <img src="img/logo.svg" style="height: 20px">
           </a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><i class="glyphicon glyphicon-user"></i> Profil</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-wrench"></i> Settings</a></li>
+            <li><a href="#/profile"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
+            <li><a href="#/settings"><i class="glyphicon glyphicon-wrench"></i> Settings</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12" ng-controller="FeedCtrl">
-          <ul class="feeds">
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <ul>
-          <li ng-repeat="(key, peer) in peers">
-            {{peer.address}}:{{peer.port}}
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div class="container-fluid" ng-view></div>
 
     <!-- Vendor -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <!-- Module -->
     <script src="lib/influx.js"></script>
     <!-- Services -->
     <script src="lib/services/signal.js"></script>
     <!-- Controllers -->
-    <script src="lib/controllers/app.js"></script>
     <script src="lib/controllers/feed.js"></script>
   </body>
 </html>
