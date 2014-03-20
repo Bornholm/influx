@@ -1,4 +1,6 @@
-# Influx
+# ![InfluX](https://raw.githubusercontent.com/Bornholm/influx/develop/img/logo.svg)
+
+LAN Sharing Application
 
 ## Getting started
 
