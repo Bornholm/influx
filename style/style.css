@@ -17,11 +17,14 @@ body {
     -webkit-box-sizing: border-box;
 }
 
-body { background: #f0f0f0; overflow: hidden; margin-top: 52px;}
+body { background: #f0f0f0; overflow: hidden; }
 
 /**
  * 1 - FEEDS
  */
+.list {
+    padding-top: 45px;
+}
 .feeds-container {
     padding-left: 0;
     padding-right: 0;

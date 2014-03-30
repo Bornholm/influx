@@ -1,0 +1,246 @@
+<!-- Layout -->
+    <!-- Navbar top start -->
+    <nav class="navbar navbar-default nav-top" role="navigation">
+      <div class="container-fluid">
+        <div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Influx</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><i class="glyphicon glyphicon-user"></i> Profil</a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-wrench"></i> Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end -->
+
+    <!-- Navbar bottom start -->
+      <div class="container-fluid">
+          <div id="navbar-bottom">
+            <ul class="main-menu">
+              <li><a href="#" class="active"><i class="glyphicon glyphicon-home"></i></a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-pencil"></i></a></li>
+            </ul>
+          </div>
+      </div>
+    <!-- Navbar bottom ed -->
+
+    <!-- Feeds start -->
+    <div class="container-fluid feeds-container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="row">
+            <div class="col-md-3">
+              sidebar
+            </div>
+            <div class="col-md-9" ng-controller="FeedCtrl">
+              <!-- Feeds list start-->
+              <ul class="list-unstyled feeds">
+                <li class="feed">
+                    <section class="feed-content row">
+                      <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                        <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                      </section>
+                      <section class="col-md-11 col-sm-11 col-xs-9 content">
+                        <section class="row">
+                          <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                            <strong>Author</strong>
+                            <span class="pull-right text-muted">6min</span>
+                          </section>
+                          <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                            Simple text message
+                          </section>
+                        </section>
+                      </section>
+                    </section>
+                </li>
+                <li class="feed">
+                    <section class="feed-content row">
+                      <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                        <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                      </section>
+                      <section class="col-md-11 col-sm-11 col-xs-9 content">
+                        <section class="row">
+                          <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                            <strong>Author</strong>
+                            <span class="pull-right text-muted">6min</span>
+                          </section>
+                          <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                            Simple text message with <a href="#">http://blablablablablaka...</a>
+                          </section>
+                        </section>
+                      </section>
+                    </section>
+                </li>
+                <li class="feed">
+                    <section class="feed-content row">
+                      <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                        <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                      </section>
+                      <section class="col-md-11 col-sm-11 col-xs-9 content">
+                        <section class="row">
+                          <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                            <strong>Author</strong>
+                            <span class="pull-right text-muted">6min</span>
+                          </section>
+                          <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                            Message with image (small)
+                            <img src="https://pbs.twimg.com/profile_images/2917100546/294c4e75d8b744f2840e8307b5eed76c.png" alt="">
+                          </section>
+                        </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with thumbnail image
+                        <img src="https://pbs.twimg.com/profile_images/2917100546/294c4e75d8b744f2840e8307b5eed76c.png" class="img-thumbnail" alt="">
+                      </section>
+                    </section>
+                </li>
+                <li class="feed">
+                    <section class="feed-content row">
+                      <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                        <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                      </section>
+                      <section class="col-md-11 col-sm-11 col-xs-9 content">
+                        <section class="row">
+                          <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                            <strong>Author</strong>
+                            <span class="pull-right text-muted">6min</span>
+                          </section>
+                          <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                            Message with image (big)
+                            <img src="http://i.imgur.com/qgAp2SD.png" alt="">
+                          </section>
+                        </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with thumbnail image
+                        <img src="https://pbs.twimg.com/profile_images/2917100546/294c4e75d8b744f2840e8307b5eed76c.png" class="img-thumbnail" alt="">
+                      </section>
+                    </section>
+                  </section>
+                </section>
+            </li>
+            <li class="feed">
+                <section class="feed-content row">
+                  <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                    <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                  </section>
+                  <section class="col-md-11 col-sm-11 col-xs-9 content">
+                    <section class="row">
+                      <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                        <strong>Author</strong>
+                        <span class="pull-right text-muted">6min</span>
+                      </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with thumbnail image
+                        <img src="https://pbs.twimg.com/profile_images/2917100546/294c4e75d8b744f2840e8307b5eed76c.png" class="img-thumbnail" alt="">
+                      </section>
+                    </section>
+                  </section>
+                </section>
+            </li>
+            <li class="feed">
+                <section class="feed-content row">
+                  <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                    <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                  </section>
+                  <section class="col-md-11 col-sm-11 col-xs-9 content">
+                    <section class="row">
+                      <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                        <strong>Author</strong>
+                        <span class="pull-right text-muted">6min</span>
+                      </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with thumbnail image
+                        <img src="https://pbs.twimg.com/profile_images/2917100546/294c4e75d8b744f2840e8307b5eed76c.png" class="img-thumbnail" alt="">
+                      </section>
+                    </section>
+                  </section>
+                </section>
+            </li>
+            <li class="feed">
+                <section class="feed-content row">
+                  <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                    <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                  </section>
+                  <section class="col-md-11 col-sm-11 col-xs-9 content">
+                    <section class="row">
+                      <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                        <strong>Author</strong>
+                        <span class="pull-right text-muted">6min</span>
+                      </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with thumbnail image
+                        <img src="https://pbs.twimg.com/profile_images/2917100546/294c4e75d8b744f2840e8307b5eed76c.png" class="img-thumbnail" alt="">
+                      </section>
+                    </section>
+                  </section>
+                </section>
+            </li>
+            <li class="feed">
+                <section class="feed-content row">
+                  <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                    <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                  </section>
+                  <section class="col-md-11 col-sm-11 col-xs-9 content">
+                    <section class="row">
+                      <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                        <strong>Author</strong>
+                        <span class="pull-right text-muted">6min</span>
+                      </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with video
+                      </section>
+                    </section>
+                  </section>
+                </section>
+            </li>
+            <li class="feed">
+                <section class="feed-content row">
+                  <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                    <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                  </section>
+                  <section class="col-md-11 col-sm-11 col-xs-9 content">
+                    <section class="row">
+                      <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                        <strong>Author</strong>
+                        <span class="pull-right text-muted">6min</span>
+                      </section>
+                      <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                        Message with video
+                      </section>
+                    </section>
+                </li>
+                <li class="feed">
+                    <section class="feed-content row">
+                      <section class="col-md-1 col-sm-1 col-xs-3 avatar">
+                        <img src="http://ihipster.de/img/avatarPlaceholder.png" alt="">
+                      </section>
+                      <section class="col-md-11 col-sm-11 col-xs-9 content">
+                        <section class="row">
+                          <section class="col-md-12 col-sm-12 col-xs-12 meta-content">
+                            <strong>Author</strong>
+                            <span class="pull-right text-muted">6min</span>
+                          </section>
+                          <section class="col-md-12 col-sm-12 col-xs-12 msg-content">
+                            Message with video
+                          </section>
+                        </section>
+                      </section>
+                    </section>
+                </li>
+              </ul>
+              <!-- Feeds list end -->     
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feeds end -->
+        </div>
