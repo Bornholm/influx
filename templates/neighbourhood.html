@@ -1,0 +1,14 @@
+<ion-view title="Neighbourhood">
+  <ion-content has-header="true">
+    <ul class="list">
+      <li class="item item-icon-left"  ng-repeat="p in peers">
+        <i class="icon ion-person"></i>
+        <ul>
+          <li><b>Nickname: </b><span ng-bind="p.metadata.name"></span></li>
+          <li><b>Address: </b><span ng-bind="p.address"></span></li>
+          <li><b>Port: </b><span ng-bind="p.port"></span></li>
+        <ul>
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>
