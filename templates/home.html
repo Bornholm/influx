@@ -1,50 +1,12 @@
 <ion-view title="Home">
   <ion-content has-header="true" has-footer="true">
 
-    <div class="list">
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
-        <a class="item item-avatar" href="#">
-          <img src="http://lorempixel.com/64/64/people">
-          <h2>Venkman</h2>
-          <p>Back off, man. I'm a scientist.</p>
-        </a>
-
+    <div class="list" ng-controller="FeedCtrl">
+      <a class="item item-avatar" ng-repeat="m in messages" href="#">
+        <img src="m.author.avatarUrl">
+        <h2 ng-bind="m.author.name"></h2>
+        <p ng-bind="m.text"></p>
+      </a>
     </div>
 
   </ion-content>

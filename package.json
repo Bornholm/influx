@@ -15,7 +15,7 @@
   "window": {
     "width": 300,
     "height": 500,
-    "toolbar": true,
+    "toolbar": false,
     "position": "center",
     "frame": true,
     "icon": "img/icon.png"
