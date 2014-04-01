@@ -2,12 +2,12 @@
   <ion-content has-header="true" has-footer="true">
 
     <div class="list" ng-controller="FeedCtrl">
+      <button ng-click="addRandomMessage()">Send random message</button>
       <a class="item item-avatar" ng-repeat="m in messages | orderBy:'-ts'" href="#">
         <img src="m.author.avatarUrl">
         <h2 ng-bind="m.author.name"></h2>
         <p ng-bind="m.text"></p>
       </a>
-      <button ng-click="addRandomMessage()">Send random message</button>
     </div>
 
   </ion-content>
