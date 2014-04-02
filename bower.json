@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "ionic": "~0.9.27",
-    "pouchdb": "~2.0.1"
+    "pouchdb": "~2.1.0"
   }
 }

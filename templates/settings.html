@@ -5,6 +5,10 @@
         <span class="input-label">Nickname</span>
         <input type="text" ng-model="signal.metadata.name" placeholder="Your nickname">
       </label>
+      <label class="item item-input">
+        <span class="input-label">Debug:</span>
+        <button ng-click="Store.destroy()">Clear DB</button>
+      </label>
     </div>
   </ion-content>
 </ion-view>
