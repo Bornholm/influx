@@ -7,6 +7,9 @@
     <link href="bower_components/ionic/release/css/ionic.min.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Side menu -->
+    
+
     <!-- Layout -->
 
     <ion-nav-bar animation="nav-title-slide-ios7"
@@ -14,7 +17,9 @@
       back-button-type="button-icon"
       back-button-icon="ion-arrow-left-c"></ion-nav-bar>
 
-    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+    <ion-nav-view animation="slide-left-right">
+      
+    </ion-nav-view>
     
 
     <!-- Vendor -->
@@ -28,5 +33,13 @@
     <script src="lib/controllers/feed.js"></script>
     <script src="lib/controllers/neighbourhood.js"></script>
     <script src="lib/controllers/settings.js"></script>
+
+    <script>
+      function ContentController($scope, $ionicSideMenuDelegate) {
+  $scope.toggleLeft = function() {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+}
+    </script>
   </body>
 </html>
