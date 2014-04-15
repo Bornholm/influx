@@ -1,13 +1,22 @@
 <ion-view title="Home">
-  <ion-content has-header="true" has-footer="true">
 
-    <div class="list" ng-controller="FeedCtrl">
-      <a class="item item-avatar" ng-repeat="m in messages" href="#">
+  <ion-content has-header="true" has-footer="true" ng-controller="FeedCtrl">
+    <ion-list>
+      <ion-item ng-repeat="m in messages track by m._id | orderBy:'-date'"
+                item="m"
+                href="#">
         <img src="m.author.avatarUrl">
         <h2 ng-bind="m.author.name"></h2>
         <p ng-bind="m.text"></p>
-      </a>
-    </div>
+        <p>{{fromNow(m.date)}}</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll
+      ng-if="!noMoreMessages"
+      on-infinite="loadMore()"
+      distance="10%">
+    </ion-infinite-scroll>
 
   </ion-content>
 </ion-view>

@@ -15,12 +15,13 @@
   "window": {
     "width": 300,
     "height": 500,
-    "toolbar": false,
+    "toolbar": true,
     "position": "center",
     "frame": true,
     "icon": "img/icon.png"
   },
   "dependencies": {
-    "node-uuid": "^1.4.1"
+    "node-uuid": "^1.4.1",
+    "express": "~3.5.1"
   }
 }
