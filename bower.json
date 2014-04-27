@@ -17,9 +17,7 @@
   "dependencies": {
     "ionic": "1.0.0-beta.1",
     "pouchdb": "~2.1.0",
-    "moment": "~2.5.1"
-  },
-  "resolutions": {
-    "ionic": "1.0.0-beta.1"
+    "moment": "~2.5.1",
+    "ngstorage": "~0.3.0"
   }
 }
