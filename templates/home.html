@@ -16,7 +16,7 @@
                     href="#/tab/feed">
             <img src="m.author.avatarUrl">
             <h2 ng-bind="m.author.name"></h2>
-            <p ng-bind="m.text"></p>
+            <p ng-bind="m.text | links"></p>
             <p>{{fromNow(m.date)}}</p>
           </ion-item>
         </ion-list>
