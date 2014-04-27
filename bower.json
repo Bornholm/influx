@@ -15,8 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "ionic": "~0.9.27",
+    "ionic": "1.0.0-beta.1",
     "pouchdb": "~2.1.0",
     "moment": "~2.5.1"
+  },
+  "resolutions": {
+    "ionic": "1.0.0-beta.1"
   }
 }

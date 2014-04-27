@@ -1,22 +1,53 @@
 <ion-view title="Home">
 
-  <ion-content has-header="true" has-footer="true" ng-controller="FeedCtrl">
-    <ion-list>
-      <ion-item ng-repeat="m in messages track by m._id | orderBy:'-date'"
-                item="m"
-                href="#/tab/feed">
-        <img src="m.author.avatarUrl">
-        <h2 ng-bind="m.author.name"></h2>
-        <p ng-bind="m.text"></p>
-        <p>{{fromNow(m.date)}}</p>
-      </ion-item>
-    </ion-list>
+  <ion-nav-buttons side="left" ng-controller="SideMenuCtrl">
+    <button class="button-icon icon ion-compose button" ng-click="toggleLeftSideMenu()"></button>
+  </ion-nav-buttons>
 
-    <ion-infinite-scroll
-      ng-if="!noMoreMessages"
-      on-infinite="loadMore()"
-      distance="10%">
-    </ion-infinite-scroll>
+  <ion-side-menus>
 
-  </ion-content>
+    <ion-pane ion-side-menu-content>
+
+      <ion-content has-header="true" has-footer="true" ng-controller="FeedCtrl">
+
+        <ion-list>
+          <ion-item ng-repeat="m in messages track by m._id | orderBy:'-date'"
+                    item="m"
+                    href="#/tab/feed">
+            <img src="m.author.avatarUrl">
+            <h2 ng-bind="m.author.name"></h2>
+            <p ng-bind="m.text"></p>
+            <p>{{fromNow(m.date)}}</p>
+          </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll
+          ng-if="!noMoreMessages"
+          on-infinite="loadMore()"
+          distance="10%">
+        </ion-infinite-scroll>
+
+      </ion-content>
+
+    </ion-pane>
+
+    <ion-side-menu side="left">
+
+      <ion-content has-header="true" padding="true" ng-controller="WriteCtrl">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Your message</span>
+            <textarea type="text" placeholder="Hi!..." rows="10" ng-model="text"></textarea>
+          </label>
+          <div class="padding-vertical"></div>
+          <button class="button button-block button-balanced" ng-click="send()" ng-disabled="!text">
+            <i class="ion-paper-airplane"></i> Send!
+          </button>
+        </div>
+      </ion-content>
+
+    </ion-side-menu>
+
+  </ion-side-menus>
+
 </ion-view>
