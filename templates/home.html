@@ -11,7 +11,7 @@
       <ion-content has-header="true" has-footer="true" ng-controller="FeedCtrl">
 
         <ion-list>
-          <ion-item ng-repeat="m in messages track by m._id | orderBy:'-date'"
+          <ion-item class="item item-avatar" ng-repeat="m in messages track by m._id | orderBy:'-date'"
                     item="m"
                     href="#/tab/feed">
             <img src="m.author.avatarUrl">

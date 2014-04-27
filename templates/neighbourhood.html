@@ -1,14 +1,24 @@
 <ion-view title="Neighbourhood">
+
   <ion-content has-header="true">
-    <ul class="list">
+
+    <ul class="list" ng-show="peers.length">
       <li class="item item-icon-left"  ng-repeat="p in peers">
         <i class="icon ion-person"></i>
         <ul>
           <li><b>Nickname: </b><span ng-bind="p.metadata.name"></span></li>
           <li><b>Address: </b><span ng-bind="p.address"></span></li>
           <li><b>Port: </b><span ng-bind="p.port"></span></li>
-        <ul>
+        </ul>
       </li>
     </ul>
+
+    <div class="card" ng-hide="peers.length > 0">
+      <div class="item item-text-wrap">
+        Nobody seems connected :-(
+      </div>
+    </div>
+
   </ion-content>
+
 </ion-view>
