@@ -40,7 +40,7 @@
             <textarea type="text" placeholder="Hi!..." rows="10" ng-model="text"></textarea>
           </label>
           <div class="padding-vertical"></div>
-          <button class="button button-block button-balanced" ng-click="send()" ng-disabled="!text">
+          <button ng-controller="SideMenuCtrl" class="button button-block button-balanced" ng-click="send(); toggleLeftSideMenu()" ng-disabled="!text">
             <i class="ion-paper-airplane"></i> Send!
           </button>
         </div>
